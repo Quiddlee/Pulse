@@ -4,6 +4,7 @@ const sass        = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
+const { FALSE } = require('sass');
 
 gulp.task('server', function() {
 
@@ -20,7 +21,10 @@ gulp.task('styles', function() {
     return gulp.src("src/sass/**/*.+(scss|sass)")
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({suffix: '.min', prefix: ''}))
-        .pipe(autoprefixer())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());
