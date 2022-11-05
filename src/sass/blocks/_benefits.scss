@@ -29,8 +29,14 @@
         text-align: center;
         color: #0D0D0D;
         margin-top: 20px;
-        span {
-            color: #FF0000
+    }
+    &__link {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        display: flex;
+        a {
+           margin-left: 5px;
         }
     }
 }
