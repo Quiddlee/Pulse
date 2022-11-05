@@ -1,0 +1,118 @@
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .benefits {
+        &__wrapper {
+            gap: 10px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .promo {
+        &__header {
+            font-size: 38px;
+        }
+        &__subheader {
+            font-size: 18px;
+        }
+        &__icons {
+            width: 350px;
+            scale: 90%;
+        }
+        .button_main {
+            width: 245px;
+        }
+        &__link {
+            font-size: 14px;
+        }
+    }
+    .header {
+        &__official {
+            display: none;
+        }
+    }
+
+    .benefits {
+        padding: 73px 0 970px 0;
+        &__main {
+            font-size: 15px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+        &__link {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .promo {
+        padding: 21px 10px 93px 10px;
+        header {
+            .header-logo {
+                max-width: 180px;
+                img {
+                    width: 100%;
+                }
+            }
+            .header__contacts {
+                min-width: 150px;
+                .header__phone {
+                    font-size: 13px;
+                }
+                .button {
+                    font-size: 9px;
+                    width: 75%;
+                }
+            }
+        }
+        &__wrapper {
+            align-items: center;
+        }
+        &__header {
+            font-size: 7vw;
+            text-align: center;
+        }
+        &__subheader {
+            margin-top: 3px;
+            font-size: 3.5vw;
+        }
+        &__icons {
+            align-content: center;
+            align-items: center;
+            margin-top: 60px;
+            scale: 80%;
+        }
+        .button_main {
+            margin-top: 60px;
+            scale: 90%;
+        }
+        &__link {
+            margin-top: 8px;
+        }
+    }
+    .benefits {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__main {
+            font-size: 18px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+        &__link {
+            font-size: 14px;
+        }
+        &_title {
+            font-size: 23px;
+        }
+    }
+}
