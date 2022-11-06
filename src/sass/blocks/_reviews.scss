@@ -3,7 +3,6 @@
     &__wrapper {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
     }
     &__item {
         margin-top: 60px;
@@ -12,6 +11,7 @@
     }
     &__img {
         max-height: 170px;
+        max-width: 170px;
         margin-right: 60px;
     }
     &__descr {
