@@ -7,7 +7,19 @@
             gap: 10px;
         }
     }
+    .carousel {
+        scale: 70%;
+    }
+    .catalog {
+        &__tab {
+            &:hover {
+                box-shadow: none;
+                border: 2px solid #d0d0d0;
+            }
+        }
+    }    
 }
+
 @media (max-width: 767px) {
     .container {
         max-width: 540px;
@@ -69,6 +81,14 @@
                 height: 45px;
             }
         }
+    }
+    .carousel {
+        .container {
+            display: flex;
+            justify-content: center;
+            scale: 80%;
+        }
+        
     }
 }
 
@@ -140,12 +160,10 @@
     .consultation {
         padding: 100px 10px 70px 10px;
         .title_left {
-            // text-align: center;
             font-size: 19px;
             line-height: 25px;
         }
         &__descr {
-            // text-align: center;
             font-size: 13px;
             line-height: 20px;
         }
@@ -156,6 +174,24 @@
                 font-size: 9px;
                 height: 40px;
             }
+        }
+    }
+    .carousel {
+        padding: 0;
+        max-height: 553px;
+        .container {
+            scale: 50%;
+        }
+    }
+    .catalog {
+        &__tabs {
+            scale: 85%;
+        }
+        &__tab {
+            text-align: center;
+            font-size: 3vw;
+            line-height: 50px;
+            // height: 100px;
         }
     }
 }
