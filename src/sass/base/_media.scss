@@ -222,4 +222,20 @@
             font-size: 15px;
         }
     }
+    .footer {
+        &__info {
+            height: 255px;
+            width: 100%;
+            padding: 50px 0;
+        }
+        &__addr {
+            font-size: 18px;
+        }
+        &__phone {
+            font-size: 17px; 
+        }
+        &__socials {
+            scale: 70%;
+        }
+    }
 }
