@@ -82,8 +82,9 @@
             text-align: center;
             color: $main-color;
             text-transform: uppercase;
+            transition: 0.1s all;
             &:hover {
-                color: $main-color;
+                color: red;
             }
         }
         hr {
@@ -163,8 +164,9 @@
             font-size: 14px;
             font-weight: 500px;
             text-transform: uppercase;
+            transition: 0.1s all;
             &:hover {
-                color: $main-color;
+                color: red;
             }
         }
     }

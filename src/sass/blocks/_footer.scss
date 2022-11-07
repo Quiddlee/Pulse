@@ -27,8 +27,10 @@
         color: #FFFFFF;
         margin-bottom: 38px;
         text-align: center;
+        transition: 0.1s all;
         &:hover {
-            color: #FFFFFF
+            color: #FFFFFF;
+            font-size: 21px;
         }
     }
     &__social-item {
@@ -40,6 +42,11 @@
         border: 2px solid #fff;
         border-radius: 100%;
         margin: 0 15px;
+        transition: 0.1s all;
+        &:hover {
+            background-color: red;
+            transform: scale(1.03, 1.03);
+        }
         img {
             height: 27px;
         }

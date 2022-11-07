@@ -8,6 +8,10 @@
     font-size: 12px;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: 0.1s all;
+    &:hover {
+        background-color: red;
+    }
     &_main {
         margin-top: 67px;
         width: 303px;
@@ -19,11 +23,12 @@
         height: 55px;
         font-size: 16px;
         color: #FFFFFF;
+        transition: 0.1s all;
     }
     &_mini {
         width: 135px;
         height: 44px;
         font-size: 14px;
-
+        transition: 0.1s all;
     }
 }

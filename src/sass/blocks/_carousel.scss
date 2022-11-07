@@ -12,6 +12,10 @@
         left: -66px;
         border: none;
         background-color: white;
+        transition: 0.3s all;
+        &:hover {
+            transform: translateY(-50%) scale(1, 1.1);
+        }
         img {
             width: 31px;
             height: 50px;

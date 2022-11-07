@@ -1,4 +1,9 @@
 @media (max-width: 991px) {
+    .button {
+        &:hover {
+            background-color: $main-color;
+        }
+    }
     .container {
         max-width: 720px;
     }

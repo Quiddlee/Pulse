@@ -1,5 +1,10 @@
 .link {
+    position: relative;
     color: $main-color;
     text-transform: uppercase;
     text-decoration: underline;
+    transition: 0.1s all;
+    &:hover {
+        color: red;
+    }
 }
