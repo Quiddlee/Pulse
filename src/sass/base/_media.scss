@@ -243,4 +243,25 @@
             scale: 70%;
         }
     }
+    .modal {
+        width: 290px;
+        .feed-form {
+            width: 100%;
+        }
+        &__close {
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+        }
+        &__subtitle {
+            font-size: 20px;
+        }
+        &__descr {
+            margin-top: 15px;
+            font-size: 13px;
+        }
+        .button_submit {
+            font-size: 13px;
+        }
+    }
 }
