@@ -24,8 +24,8 @@ $(document).ready(function () {
                 e.preventDefault();
                 $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
                 $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
-            })
-        })
+            });
+        });
     }
 
     toggleSlide('.catalog-item__link');
@@ -71,7 +71,7 @@ $(document).ready(function () {
                 }
             }
         });
-    };
+    }
 
     valideForms('#consultation-form');
     valideForms('#consultation form');
@@ -100,4 +100,6 @@ $(document).ready(function () {
         });
         }
     });
+
+    new WOW().init();
 });

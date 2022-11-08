@@ -11,8 +11,14 @@
         align-items: center;
         width: 280px;
         margin-top: 60px;
-        img {
-            width: 70px;
+    }
+    &__icon {
+        width: 70px;
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
         }
     }
     &__main {
