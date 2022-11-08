@@ -75,7 +75,8 @@
             color: #0D0D0D;
         }
         &__link {
-            display: block;
+            display: flex;
+            justify-content: center;
             margin-top: 17px;
             font-weight: 500;
             font-size: 14px;
