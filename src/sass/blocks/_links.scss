@@ -29,6 +29,23 @@
             content: '';
             width: 34%;
             left: 33%;
+            background-color: $main-color;
+        }
+        &:hover {
+            color: red;
+        }
+        &:hover::after {
+            background-color: red;
+        }
+        &__back {
+            &::after {
+                background-color: $main-color;
+                width: 100%;
+                left: 0;
+            }
+            &:hover::after {
+                background-color: red;
+            }
         }
     }
 }
