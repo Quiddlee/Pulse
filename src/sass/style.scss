@@ -1,5 +1,13 @@
+//libraries
+@import "libs/bootstrap-reboot.min";
+@import "libs/fonts";
+@import "libs/slick";
+@import "libs/animate.min";
+
+//base
+@import "base/mixins";
 @import "base/variables";
-@import "base/media";
+
 * {
     font-family: 'Museo Sans', sans-serif;
 }
@@ -7,6 +15,8 @@
     max-width: 950px;
     margin: 0 auto; 
 }
+
+//blocks
 @import "blocks/promo";
 @import "blocks/header";
 @import "blocks/buttons";
@@ -21,3 +31,6 @@
 @import "blocks/footer";
 @import "blocks/modal";
 @import "blocks/pageup";
+
+//Media
+@import "base/media";

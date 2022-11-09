@@ -3,9 +3,13 @@
     position: fixed;
     bottom: 40px;
     right: 40px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     img {
+        transition: 0.1s all;
         width: 100%;
+        &:hover {
+            transform: scale(1.03, 1.03);
+        }
     }
 }
