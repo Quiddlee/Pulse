@@ -79,6 +79,30 @@ $(document).ready(function () {
 
     $('input[name=phone]').mask("+7 (999) 999-99-99");
 
+
+    //forms
+
+    $('form').submit(function (event) {
+        event.preventDefault();
+
+        if (!$(this).valid()) {
+            return;
+        }
+
+        $.ajax({
+            type: 'POST',
+            url: 'mailer/smart.php',
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find('input').val('');
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+
     //Page up & smooth scroll
 
     $(window).scroll(function () {
